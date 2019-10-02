@@ -6,9 +6,9 @@ services:
         image: caresoft:latest
         environment:
             - DB_DRIVER=com.mysql.cj.jdbc.Driver
-            - DB_URL=jdbc:mysql://sp1.dev.native.vn:3306/ds_lms_adb?createDatabaseIfNotExist=true&autoReconnect=true&UseUnicode=true&characterEncoding=utf8&useSSL=false
-            - DB_USERNAME=bontk
-            - DB_PASSWORD=1qazXSW@123
+            - DB_URL=jdbc:mysql://localhost:3306/demo?createDatabaseIfNotExist=true&autoReconnect=true&UseUnicode=true&characterEncoding=utf8&useSSL=false
+            - DB_USERNAME=root
+            - DB_PASSWORD=root
             - DB_DDL_AUTO=update
             - DB_PLATFORM=vn.edu.topica.crawler.caresoft.utils.mysqldialect.CustomMysqlDialect
         networks:
